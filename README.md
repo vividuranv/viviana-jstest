@@ -1,18 +1,27 @@
 #JS Challenges
 
 ## About
-This application contains the "Cash Register" and the "Pair Wise" challenges. Developed as a part of an interview for GFT.
+This a gulp application that contains the "Cash Register" and the "Pair Wise" challenges. Developed as a part of an interview for GFT.
 
 ## Author 
 Viviana Durán Vega
 
 ## Table of Contents
 
+  1. [Run project](#run-project)
   1. [Cash Register Challenge](#cash-register-challenge)
   1. [Pair Wise Challenge](#pair-wise-challenge)
   1. [Gulp](#gulp)
   1. [Saas](#saas)
  
+## Run Project
+- First you should have installed *nodejs* and *gulpjs* in your envoriment.
+    - http://y2u.be/VnqrMwpZM7E
+- In the terminal navigate to the project folder.
+- Run ``npm install``, in order to install all the necessary dependencies.
+- Run ``gulp``.
+
+
 ## Cash Register Challenge
   - Design a CashRegister that allows you to make payment by passing "price", "cash" and then calculates if the change due isavailable, if the amount is available then return "Change Due: $1.01" if it does not have sufficient cash the return "Insufficient Funds" and after paid is trigger then it returns "Closed". Also you should be able to call square at the end od day, initial cash + sold amount it should equal totalAmount available.
 
@@ -41,8 +50,7 @@ Viviana Durán Vega
 ### Gulp
 
   - In order to run the challenge you should have gulp installed since it is used as the task runner.
-  - In the console go to the project folder and run ```gulp serve```
-
+  
   It compiles the javascript into a single file (main.js) to serve the application:
   ```javascript
     gulp.task('scripts', function() {
