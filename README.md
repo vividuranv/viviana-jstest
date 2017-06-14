@@ -15,7 +15,7 @@ Viviana Durán Vega
   1. [Saas](#saas)
  
 ## Run Project
-- First you should have installed *nodejs* and *gulpjs* in your envoriment.
+- First you should have installed ``nodejs`` and ``gulpjs`` in your envoriment.
     - http://y2u.be/VnqrMwpZM7E
 - In the terminal navigate to the project folder.
 - Run ``npm install``, in order to install all the necessary dependencies.
