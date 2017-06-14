@@ -1,0 +1,42 @@
+
+.pairwise
+{
+	&__container
+	{
+		padding: 25px;
+		
+		.btn-submit{
+			color: #fff;
+			background-color: #B71234;
+			font-size: 14px;
+			padding: 5px;
+			text-transform: uppercase;
+		}
+		.btn-submit:hover {
+		      background-color: #C41230;
+		}
+	}
+	&__label
+	{
+		font-size: 18px;
+		font-weight: bold;
+		width: 100px;
+    	display: inline-block;
+	}
+	&__input
+	{
+		height: 25px;
+		font-size: 16px;
+	}
+	&__result
+	{
+		font-size: 24px;
+		color: green;
+		font-weight: bold;
+	}
+	&__author
+	{
+		font-style: italic;
+		font-size: 14px;
+	}
+}

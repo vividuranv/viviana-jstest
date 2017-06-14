@@ -1,0 +1,50 @@
+.cashier {
+    &__container {
+        padding: 25px;
+        .btn-submit {
+            color: #fff;
+            background-color: #B71234;
+            font-size: 14px;
+            padding: 15px;
+            text-transform: uppercase;
+        }
+        .btn-submit:hover {
+            background-color: #C41230;
+        }
+        .bold {
+            font-weight: bold;
+        }
+    }
+}
+.calculator {
+    display: -webkit-flex;
+    display: flex;
+    &__left, &__right {
+        width: 45%;
+        display: inline-block;
+        padding: 2%;
+    }
+    &__right {
+        background-color: #ECE6DD;
+    }
+    &__left {
+        border: 2px solid #ECE6DD;
+    }
+}
+.denominations {
+    display: -webkit-flex;
+    display: flex;
+    &__box {
+        width: 11%;
+    }
+    &__label {
+        display: block;
+    }
+    &__input {
+        width: 42px;
+    }
+}
+.log {
+    border: 2px solid gray;
+    min-height: 100px;
+}

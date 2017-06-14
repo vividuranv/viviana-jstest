@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Viviana</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <link rel='stylesheet' href='css/pairwise.css' />
+</head>
+
+<body>
+    <div class="pairwise__container">
+        <h1>Statement</h1>
+        <p>
+            Given an array arr, find element pairs whose sum equal the second argument arg and return the sum of their indices.
+        </p>
+        <p>
+            If multiple pairs are possible that have the same numeric elements but different indices, return the smallest sum of indices. Once an element has been used, it cannot be reused to pair with another.
+        </p>
+
+        <label class="pairwise__label">Array:</label>
+        <input type="text" class="pairwise__input array-val" value="[7, 9, 11, 13, 15]">
+        <br />
+        <label class="pairwise__label">Argument:</label>
+        <input type="text" class="pairwise__input argument-val" value="20">
+        <button class="btn-submit">Find</button>
+
+        <br><br />
+
+        <label class="pairwise__label">Result:</label>
+        <span class="pairwise__result"></span>
+
+        <p class="pairwise__author">Author: Viviana Durán V.</p>
+    </div>
+</body>
+
+</html>

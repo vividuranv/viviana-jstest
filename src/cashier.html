@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Viviana</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <link rel='stylesheet' href='css/cashier.css' />
+</head>
+<body>
+    <div class="cashier__container">
+        <h1>Statement</h1>
+        <p>
+            Design a CashRegister that allows you to make payment by passing “price”, “cash” and then calculates if the change due is available, if the amount is available then return “Change Due: $1.01” if it does not have sufficient cash then return “Insufficient Funds” and after paid is trigger then it returns “Closed”. Also you should be able to call square at the end of day, initial cash + sold amount it should equal totalAmount available.
+        </p>
+        <p>
+            Note remember the cash register should know how many of each amount it contains, and it could use combinations of each to give you the change.
+        </p>
+        <h2>Cashier Registrer</h2>
+        Cash Register <b>Today's</b> start point <i>(as example)</i>: Initial Cash = $100 and 3 TWENTY's, 1 TEN, 2 FIVE's, 20 ONE's. <br /><br />
+        <div class="calculator">
+            <div class="calculator__left">
+                Price: <input type="text" value="0" class="price"><br /> Cash: <input type="text" value="0" class="cash"><br /><br />
+                <div class="denominations">
+                    <div class="denominations__box">
+                        <label class="denominations__label">hundred</label>
+                        <input type="text" value="0" class="denominations__input hundred">
+                    </div>
+                    <div class="denominations__box">
+                        <label class="denominations__label">twenty</label>
+                        <input type="text" value="0" class="denominations__input twenty">
+                    </div>
+                    <div class="denominations__box">
+                        <label class="denominations__label">ten</label>
+                        <input type="text" value="0" class="denominations__input ten">
+                    </div>
+                    <div class="denominations__box">
+                        <label class="denominations__label">five</label>
+                        <input type="text" value="0" class="denominations__input five">
+                    </div>
+                    <div class="denominations__box">
+                        <label class="denominations__label">one</label>
+                        <input type="text" value="0" class="denominations__input one">
+                    </div>
+                    <div class="denominations__box">
+                        <label class="denominations__label">quarter</label>
+                        <input type="text" value="0" class="denominations__input quarter">
+                    </div>
+                    <div class="denominations__box">
+                        <label class="denominations__label">dime</label>
+                        <input type="text" value="0" class="denominations__input dime">
+                    </div>
+                    <div class="denominations__box">
+                        <label class="denominations__label">nickel</label>
+                        <input type="text" value="0" class="denominations__input nickel">
+                    </div>
+                    <div class="denominations__box">
+                        <label class="denominations__label">penny</label>
+                        <input type="text" value="0" class="denominations__input penny">
+                    </div>
+                </div>
+                <br />
+                <button class="btn-submit calculate">CALCULATE</button>
+                <button class="btn-submit clear">CLEAR</button>
+                <br /><br />
+                <div>Change Due: <span class="bold change">$0</span></div>
+                <div>Change denominations: <br /><span class="bold changeDenominations"></span></div>
+                <br><br>
+                <span>Log:</span>
+                <div class="log">
+                </div>
+            </div>
+            <div class="calculator__right">
+                <div class="cashierStatus">
+                    <button class="btn-submit status">Get Status</button><br /><br />
+                    <b>Cashier Registrer Status:</b><br /> Initial Cash: <span class="bold initialCash"></span><br /> Sold Amount: <span class="bold soldAmmount"></span><br /> Total Amount: <span class="bold totalAmount"></span><br /><br /><br />
+                    <b>Remain Denominations:</b> <br /><span class="remainDenominations"></span><br />
+                </div>
+            </div>
+        </div>
+        <p>Author: Viviana Durán V.</p>
+    </div>
+</body>
+</html>
